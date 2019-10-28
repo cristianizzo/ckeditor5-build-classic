@@ -96,9 +96,6 @@ ClassicEditor.defaultConfig = {
 			'imageTextAlternative'
 		]
 	},
-	mediaEmbed: {
-
-	},
 	table: {
 		contentToolbar: [
 			'tableColumn',
