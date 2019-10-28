@@ -81,7 +81,7 @@ class Adapter {
 			const reader = this.reader = new window.FileReader();
 
 			reader.addEventListener( 'load', async () => {
-				const base64Image = await this.imageHelper.resizeBase64Image(reader.result);
+				const base64Image = await this.imageHelper.resizeBase64Image( reader.result );
 				resolve( { default: base64Image } );
 			} );
 
