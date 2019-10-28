@@ -26,15 +26,19 @@
 	<p>You can use this sample to validate whether your <a href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html">custom build</a> works fine.</p>
 </div>
 
-<script src="../build/ckeditor.js"></script>
+<script type="text/javascript">
+  var cachebuster = Math.round(new Date().getTime() / 1000);
+  document.write('<scr'+'ipt type="text/javascript" src="../build/ckeditor.js?v=' +cachebuster+'"></scr' + 'ipt>');
+</script>
+
 <script>
-	ClassicEditor.create( document.querySelector( '#editor' ) )
-		.then( editor => {
-			window.editor = editor;
-		} )
-		.catch( err => {
-			console.error( err.stack );
-		} );
+  ClassicEditor.create( document.querySelector( '#editor' ) )
+    .then( editor => {
+      window.editor = editor;
+    } )
+    .catch( err => {
+      console.error( err.stack );
+    } );
 </script>
 
 </body>
