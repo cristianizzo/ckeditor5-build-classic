@@ -36,6 +36,8 @@ import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import Base64UploadAdapter from './modules/base64uploadAdapter';
 import LineHeight from 'ckeditor5-line-height';
 
+import './assets/css/style.css';
+
 export default class ClassicEditor extends ClassicEditorBase {
 }
 
