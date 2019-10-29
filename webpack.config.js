@@ -60,14 +60,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.svg$/,
-				use: [
-					{
-						loader: 'svg-url-loader',
-						options: {
-							noquotes: true,
-						},
-					},
-				],
+				use: [ 'raw-loader' ]
 			},
 			{
 				test: /\.css$/,
